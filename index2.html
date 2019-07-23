@@ -1,92 +1,273 @@
-<!-- The boring stuff -->
+
 <!DOCTYPE html>
-<html>
-	<head>
-    <link rel="icon" type="image/ico" href="https://pngimage.net/wp-content/uploads/2018/06/o-logo-design-png.png" />
-		<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
-		<style>
-		body {
-    font-family: 'Amatic SC';
-		font-size: 22px;
-		font-weight: 900;
-		background-image: url(https://as2.ftcdn.net/jpg/01/87/35/23/500_F_187352385_iMVAZL89ERpjfqdJLsP1M44OPBBrnGaL.jpg);
-  	background-size: contain;
-    position: relative;
-		}
-</style>
-</head>
-	<meta charset="UTF-8">
-	<title>OpporWeb:Research</title>
-	<meta name="description" content="DESCRIBE YOUR WEBSITE">
-	<meta name="keywords" content="KEY, WORDS, HERE">
-	</head>
-	<body>
-    <div class="topnav">
-			<a href="file:///Users/titli/Desktop/my_website/index.html">Home</a>
-			<a href="file:///Users/titli/Desktop/my_website/index1.html">Internships and Jobs</a>
-			<a href="file:///Users/titli/Desktop/my_website/index2.html">Research Opportunities</a>
-			<a href="file:///Users/titli/Desktop/my_website/index3.html">Volunteer Projects</a>
-		  <a href="#me">About The Designer</a>
-		  <a href="#me">Contact</a>
-		</div>
-		<h1> RESEARCH OPPORTUNITIES</h1>
-    <p> One space for all your Research Opportunities.</p>
-    <link href="style2.css" rel="stylesheet">
-    <ul class=format><b>  What field of research are you looking for?</b><br>
-			<a href="#soft"><span class="format">Systems and Software</a><br>
-				<img src="https://pngimage.net/wp-content/uploads/2018/05/desarrollo-de-software-png-3.png"/>
-		    <br>
-      <a href="#data"><span class="format">Data Science</a><br>
-				<img src="http://www.cssdatatelligence.com/assets/img/icons/data-icon.png"/>
-				<br>
-      <a href="#des"><span class="space">Design</a>
-				<img src="http://pluspng.com/img-png/png-logo-design-fancy-png-logo-design-91-on-professional-logo-design-with-png-logo-design-734.png"/>
-				<br>
-      <a href="#ai"><span class="space">Artificial Intelligence</a>
-  			<img src="https://pngimage.net/wp-content/uploads/2018/05/ai-en-png-7.png"/>
-  			<br>
-    </ul>
-    <div id="soft">
-      <h2> Systems and Software</h2>
-			<div id="small"><a href="http://www.cs.cornell.edu/~ragarwal/">Rachit Agarwal</a>
-      </div>
-      <div id="small"><a href="http://www.cs.cornell.edu/lorenzo/">Lorenzo Alvisi</a>
-      </div>
-      <div id="small"><a href="http://www.cs.cornell.edu/ken/">Ken Birman</a>
-      </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+
+        OpporWeb
+
+    </title>
+
+
+      <link href="http://fonts.googleapis.com/css?family=Lora:400,400italic|Roboto:100,300,400,700" rel="stylesheet">
+      <link href="../assets/css/toolkit-bold.css" rel="stylesheet">
+      <link href="../assets/css/application-bold.css" rel="stylesheet">
+      <link rel="icon" type="image/ico" href="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/128/search-icon.png"/>
+      <script src="https://kit.fontawesome.com/ee0bea2809.js"></script>
+
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+<div>
+  <nav class="navbar navbar-light fixed-top" style="background-color: #B31B1B;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style= "border:none;">
+      <img src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/128/search-icon.png" style="height: 50px; background-color: black; border-radius: 50%;">
+      <i class="fas fa-bars" style="color: white"></i>
+      <a class="navbar-brand" style="color: white;" href="#"><strong>&nbsp;MENU</strong></a>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#search" style="color: white">Search<span><button type="button" style="background: transparent; border: none;">
+            <i class="fas fa-search fa-xs float-left" style="color: white"></i>
+          </button></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#cs" style="color: white">Computer Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#is" style="color: white">Information Science</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/landing-page/index.html" target="_blank" style="color: white">Home<span><button type="button" style="background: transparent; border: none;">
+            <i class="fas fa-home fa-xs float-left" style="color: white"></i>
+          </button></span></a>
+      </ul>
     </div>
-    <div id="data">
-      <h2> Data Science</h2>
-			<div id="small"><a href="https://infosci.cornell.edu/node/474">John Abowd</a>
+  </nav>
+
+  <div class="block block-fill-height app-block-bg"
+       style="background-image: url(bkg.jpg)">
+       <div class="block-sm-middle block-xs-top">
+
+         <div class="container" id="search">
+           <div class="row">
+             <div class="col-md-5 offset-sm-0">
+               <h1 class="block-title mb-4">
+                 <span class="text-ribbon" style="background: black; color: #B31B1B">
+                   <span>RESEARCH OPPORTUNITIES.</span>
+                 </span>
+               </h1>
+               <p class="lead mt-1">
+                 <span class="text-ribbon" style="background: black; color: #B31B1B">
+                   <span>
+                     Get involved in CIS research at Cornell.
+                   </span>
+                   </span>
+                   <script async src="https://cse.google.com/cse.js?cx=002578799579816420439:qyupf_bxtdu"></script>
+                   <div class="gcse-searchbox-only"></div>
+              </p>
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
-      <div id="small"><a href="https://infosci.cornell.edu/node/29">Solon Barocas</a>
       </div>
-      <div id="small"><a href="https://infosci.cornell.edu/node/66">Dan Cosley</a>
-      </div>
+
+  <div class="block block-fill-height app-block-bg" id="cs"
+       style="background-image: url(bkg1.jpg);">
+       <div class="container">
+         <p class="lead mt-1">
+           <span class="text-ribbon" style="background-color: #B31B1B; color: white;">
+             <span>
+               Research areas in
+             </span>
+             </span>
+           </p>
+       <h1 class="block-title">
+         <span style="background-color: #B31B1B; color: white;">
+           <span>Computer Science.</span>
+         </span>
+       </h1>
+<table class="table table-borderless table-dark">
+  <tbody>
+    <tr>
+      <br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/ai" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/ai_1.jpg?itok=z81gqjnB" width="100" height="100" title="Artificial Intelligence"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/compbio" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/compbio.jpg?itok=WtOyZD36" width="100" height="100" title="Computational Biology"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/architecture" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/architecture.jpg?itok=6tsPpFKR" width="100" height="100" title="Computer Architecture and VSLI"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/datasystems" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/dataSystems.jpg?itok=tOqMxgYY" width="100" height="100" title="Database Systems"></a>
+      <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/ai';">Artificial Intelligence</button>
+      &emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/compbio';">Computational Biology</button>
+      &emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/architecture';">Computer Architecture and VSLI</button>
+      &emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/datasystems';">Database Systems</button>
+    </tr>
+    <tr>
+      <br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/graphics" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/graphics.jpg?itok=QGMgtuLg" width="100" height="100" title="Graphics"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/humaninteraction" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/HIicon.jpg?itok=GB40Buo5" width="100" height="100" title="Human Interaction"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/lang" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/lang.jpg?itok=jBjn8rPx" width="100" height="100" title="Programming Languages"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/robotics" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/robotics.jpg?itok=_dD4mg20" width="100" height="100" title="Robotics"></a>
+      <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/graphics';">Graphics</button>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/humaninteraction';">Human Interaction</button>
+      &emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/lang';">Computer Architecture and VSLI</button>
+      &emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/robotics';">Programming Languages</button>
+    </tr>
+    <tr>
+      <br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/scientif" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/scientif.jpg?itok=nE_-Q2ol" width="100" height="100" title="Scientific Computing"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/security" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/security.jpg?itok=ev9VGsbO" width="100" height="100" title="Security"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/systems" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/systems.jpg?itok=-PuNtBgA" width="100" height="100" title="Systems and Networking"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="http://www.cs.cornell.edu/research/theory" target="_blank"><img src="https://www.cs.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/theory.jpg?itok=xgpj2lGK" width="100" height="100" title="Theory of Computing"></a>
+      <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/scientif';">Scientific Computing</button>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/security';">Security</button>
+      &emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/systems';">Systems and Networking</button>
+      &emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: #B31B1B; color: white;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/theory';">Theory of Computing</button>
+    </tr>
+  </tbody>
+</table>
+     </div>
     </div>
-    <div id="des">
-      <h2> Design</h2>
-			<div id="small"><a href="https://infosci.cornell.edu/node/62">Tanzeem Choudhury</a>
+
+
+    <div class="block block-fill-height app-block-bg" id="is"
+         style="background-image: url(bkg2.jpg);">
+         <div class="container">
+           <p class="lead mt-1">
+             <span class="text-ribbon" style="background-color: white;">
+               <span class="text-dark">
+                 Research areas in
+               </span>
+               </span>
+             </p>
+           <h1 class="block-title">
+           <span>
+             <span style="color: black; background-color: white">Information Science.</span>
+           </span>
+         </h1>
+         <table class="table table-borderless table-dark">
+           <tbody>
+             <tr>
+               <br>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/computational-social-science" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/computational%20social%20science%20vector-01.png?itok=76s9x4nK" width="100" height="100" title="Computational Social Science"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/critical-data-studies" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/critical%20data%20studies%20banner%202.jpg?itok=n9Mbc47w" width="100" height="100" title="Critical Data Studies"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/data-science" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/Data%20Science%20banner.jpg?itok=r0ejeZFW" width="100" height="100" title="Data Science"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/economics-and-information" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/Economics%20and%20Information%20Banner.jpg?itok=DFTISv9P" width="100" height="100" title="Economics and Information"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/education-technology" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/Education%20Technology%20Banner.png?itok=3q3tfhTK" width="100" height="100" title="Education Technology"></a>
+               <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/computational-social-science';">Computational <br>Social Science</button>
+               &emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/critical-data-studies';">Critical Data Studies</button>
+               &emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/data-science';">Data Science</button>
+               &emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'http://www.cs.cornell.edu/research/theory';">Economics and Information</button>
+               &emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/education-technology';">Education Technology</button>
+             </tr>
+             <tr>
+               <br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/ethics-law-and-policy" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/Ethics%20Law%20and%20Policy%20Banner.jpg?itok=SurZP84h" width="100" height="100" title="Ethics, Law, and Policy"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/human-computer-interaction" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/HCI%20banner.jpg?itok=PAt0btJx" width="100" height="100" title="Human-Computer Interaction"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/human-robot-interaction" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/HRI%20Banner.jpg?itok=cTsgOZBw" width="100" height="100" title="Human-Robot Interaction"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/incentives-and-computation" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/Incentives%20and%20Computation%20banner.jpg?itok=KAKdrZI_" width="100" height="100" title="Incentives and Computation"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/infrastructure-studies" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/Infrastructure%20Studies%20banner_0.jpg?itok=F-tkh2EF" width="100" height="100" title="Infrastructure Studies"></a>
+               <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/ethics-law-and-policy';">Ethics, Law, <br>and Policy</button>
+               &emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/human-computer-interaction';">Human-Computer <br>Interaction</button>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/human-robot-interaction';">Human-Robot <br>Interaction</button>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/incentives-and-computation';">Incentives and <br>Computation</button>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/infrastructure-studies';">Infrastructure <br>Studies</button>
+             </tr>
+             <tr>
+               <br><br><br>&emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/interface-design-and-ubiquitous-computing" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/Ubicomp%20banner%202.png?itok=yogiK0cz" width="100" height="100" title="Interface Design and Ubiquitous Computing"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/natural-language-processing" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/news_images/data%20science.jpg?itok=T4jO4TXs" width="100" height="100" title="Natural Language Processing"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/network-science" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/Network%20Science%20banner.jpg?itok=Igimntp5" width="100" height="100" title="Network Science"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/social-computing-and-computer-supported-cooperative-work" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/Social-Computing-thumbnail.jpg?itok=czGwWu2K" width="100" height="100" title="Social Computing and Computer-supported Cooperative Work"></a>
+               &emsp;&emsp;&emsp;&emsp;&emsp;<a href="https://infosci.cornell.edu/research/technology-and-equity" target="_blank"><img src="https://infosci.cornell.edu/sites/default/files/styles/icon-100x100/public/research_area_icons/technology%20and%20equity%20banner.jpg?itok=6gxFQKCR" width="100" height="100" title="Technology and Equity"></a>
+               <br><br>&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/interface-design-and-ubiquitous-computing';">Interface Design and <br>Ubiquitous Computing</button>
+               &emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/natural-language-processing';">Natural Language <br>Processing</button>
+               &emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/network-science';">Network Science</button>
+               &emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/social-computing-and-computer-supported-cooperative-work';">Social Computing and <br>Computer-supported <br>Cooperative Work</button>
+               &emsp;&emsp;&emsp;<button type="button" class="btn btn-sm" style="background: white; color: #B31B1B;" onclick="window.location.href = 'https://infosci.cornell.edu/research/technology-and-equity';">Technology and <br>Equity</button>
+             </tr>
+           </tbody>
+         </table>
+       </div>
       </div>
-      <div id="small"><a href="https://infosci.cornell.edu/node/95">Wendy Ju</a>
+
+      <div class="block block-inverse accent-primary" id="footer">
+        <div class="container">
+          <div class="row text-serif">
+            <div class="col-md-2 mb-4">
+              <ul class="list-unstyled list-spaced">
+                <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html" target="_blank" style="color: #B31B1B">Internships/Jobs</a></h4></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#engineeringmang" target="_blank" class="text-muted">Engineering & Management</a></em></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#design" target="_blank" class="text-muted">Design</a></em></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#webdev" target="_blank" class="text-muted">Web Development</a></em></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#ana" target="_blank" class="text-muted">Analysis</a></em></li>
+              </ul>
+            </div>
+            <div class="col-md-2 mb-4">
+              <ul class="list-unstyled list-spaced">
+                <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html" style="color: #B31B1B">Research Opportunities</a></h4></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html#cs" class="text-muted">Computer Science</a></em></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html#is" class="text-muted">Information Science</a></em></li>
+              </ul>
+            </div>
+            <div class="col-md-2 mb-4">
+              <ul class="list-unstyled list-spaced">
+                <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html" target="_blank" style="color: #B31B1B">Volunteer Programs</a></h4></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#ith" target="_blank" style="color: #B31B1B" class="text-muted">Programs in Ithaca</a></em></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#us" target="_blank" style="color: #B31B1B" class="text-muted">Programs in The United States</a></em></li>
+                <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#abroad" target="_blank" style="color: #B31B1B" class="text-muted">Programs Abroad</a></em></li>
+              </ul>
+            </div>
+            <div class="col-md-6 mb-4">
+              <ul class="list-unstyled list-spaced">
+                <li><h4>About the Developer</h4></li>
+                <li class="text-muted">
+                  <em style="color: #B31B1B">OpporWeb</em> is developed by <em style="color: #B31B1B">Oishani Ganguly</em>. She's a student at Cornell University graduating in 2022 with a Bachelor's in Information Science. She is currently concentrating in Data Science and Interactive Technologies. She has a keen interest in Web Design with working knowledge in both. This website is a pet project and aims to alleviate the troubles college students encounter while looking for summer programs by having to scour the internet to find the a suitable project. With a wide range of listings on the website, OpporWeb hopes to overcome a part of this problem. Oishani hopes to expand the scope of the website beyond the CIS department and Cornell in the near future.
+                  <br>Background images taken from <em><a href="https://unsplash.com/" style="color: #B31B1B">unsplash.com</a></em>.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div id="small"><a href="https://infosci.cornell.edu/node/684">Cheng Zhang</a>
-      </div>
-    </div>
-    <div id="ai">
-      <h2> Artificial Intelligence</h2>
-			<div id="small"><a href="https://www.cs.cornell.edu/gomes/">Carla Gomes</a>
-      </div>
-      <div id="small"><a href="http://legacy.orie.cornell.edu/~shmoys/">David Shmoys</a>
-      </div>
-    </div>
-		<div id="me">About The Designer</div>
-		<h3> Hi!<br>My name is <span style="color: gold">Oishani Ganguly</span>.<br>I'm a freshmen at Cornell University majoring in Information Science.<br>This website was my FemmeHacks 2019 project on user interface design <br>and my very first attempt at web design!<br>I hope you all enjoyed the interface!
-		</h3>
-			<br>
-		<div id="me">Contact</div>
-		<center><a href="https://www.facebook.com/oishani.ganguly" title="Facebook" target="blank"><img class="icons" id="facebook" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"></a></center>
-		<center><a href="https://www.linkedin.com/in/oishani-ganguly-220066143" title="LinkedIn" target="blank"><img class="icons" id="linkedin" src="data:image/png;base64,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"></a></center>
-    <center><a href="mailto:oishani.ganguly@gmail.com" title="Email"><img class="icons" id="email" src="https://cdn4.iconfinder.com/data/icons/happily-colored-snlogo/512/gmail-email-mail-logo-circle-material.png"></center>
-    </body>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/tether.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script>
+      (function() {
+        var cx = '002578799579816420439:qyupf_bxtdu';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      window.onload = function(){
+      document.getElementById('gsc-i-id1').placeholder = 'Search for research';
+    };
+    $(function() {
+      $(document).click(function (event) {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+    </script>
+  </body>
 </html>

@@ -1,74 +1,241 @@
-<!-- The boring stuff -->
+
 <!DOCTYPE html>
-<html>
-	<head>
-    <link rel="icon" type="image/ico" href="https://pngimage.net/wp-content/uploads/2018/06/o-logo-design-png.png" />
-		<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
-		<style>
-		body {
-    font-family: 'Amatic SC';
-		font-size: 22px;
-		font-weight: 900;
-		background-image: url(https://as2.ftcdn.net/jpg/01/87/35/23/500_F_187352385_iMVAZL89ERpjfqdJLsP1M44OPBBrnGaL.jpg);
-  	background-size: contain;
-    position: relative;
-		}
-</style>
-</head>
-	<meta charset="UTF-8">
-	<title>OpporWeb:VolProj</title>
-	<meta name="description" content="DESCRIBE YOUR WEBSITE">
-	<meta name="keywords" content="KEY, WORDS, HERE">
-	</head>
-	<body>
-    <div class="topnav">
-			<a href="file:///Users/titli/Desktop/my_website/index.html">Home</a>
-			<a href="file:///Users/titli/Desktop/my_website/index1.html">Internships and Jobs</a>
-			<a href="file:///Users/titli/Desktop/my_website/index2.html">Research Opportunities</a>
-			<a href="file:///Users/titli/Desktop/my_website/index3.html">Volunteer Projects</a>
-		  <a href="#me">About The Designer</a>
-		  <a href="#me">Contact</a>
-		</div>
-		<h1> VOLUNTEER PROJECTS</h1>
-    <p> One space for all your Volunteer Projects.</p>
-    <link href="style3.css" rel="stylesheet">
-    <ul class=format><b>  Where do you want to volunteer?</b><br>
-			<a href="#east"><span class="format">New England</a><br>
-				<img src="https://pngimage.net/wp-content/uploads/2018/06/new-england-png.png"/>
-		    <br>
-      <a href="#mid"><span class="format">Mid-West</a><br>
-				<img src="https://www.isanet.org/portals/0/Documents/MIDWEST/ISA%20Midwest%20Regional%20Map.png"/>
-				<br>
-      <a href="#west"><span class="space">West Coast</a>
-				<img src="http://www.sclance.com/pngs/california-png/california_png_203807.png"/>
-				<br>
-    </ul>
-    <div id="east">
-      <h2> New England</h2>
-			<div id="small"><a href="https://www.google.com/search?rlz=1C5CHFA_enIN804IN804&ei=pV5fXIvAItG5ggek3p-IDg&q=jobs+at+nonprofits+nyc&oq=jobs+at+non&gs_l=psy-ab.1.2.0i20i263j0l8j0i20i263.3012.7215..9729...1.0..0.98.930.11....2..0....1..gws-wiz.....6..0i71j35i39j0i67j0i131j0i131i67j0i131i20i263j0i10i67.07xwyZxeqZ4&ibp=htl;jobs&sa=X&ved=2ahUKEwjBv5To46_gAhVGZN8KHYtMAZsQp4wCMAB6BAgBEBE#htidocid=_vFjxDlcdCSmJY-bAAAAAA%3D%3D">Public Outreach Representative</a>
-      </div>
-      <div id="small"><a href="https://www.google.com/search?rlz=1C5CHFA_enIN804IN804&ei=pV5fXIvAItG5ggek3p-IDg&q=jobs+at+nonprofits+nyc&oq=jobs+at+non&gs_l=psy-ab.1.2.0i20i263j0l8j0i20i263.3012.7215..9729...1.0..0.98.930.11....2..0....1..gws-wiz.....6..0i71j35i39j0i67j0i131j0i131i67j0i131i20i263j0i10i67.07xwyZxeqZ4&ibp=htl;jobs&sa=X&ved=2ahUKEwjBv5To46_gAhVGZN8KHYtMAZsQp4wCMAB6BAgBEBE#fpstate=tldetail&htidocid=Y_nW7VT06dXxp1XHAAAAAA%3D%3D&htivrt=jobs">Event Management at Feeding Children Everywhere</a>
-      </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+
+        OpporWeb
+
+    </title>
+
+
+      <link href="http://fonts.googleapis.com/css?family=Lora:400,400italic|Roboto:100,300,400,700" rel="stylesheet">
+      <link href="../assets/css/toolkit-bold.css" rel="stylesheet">
+      <link href="../assets/css/application-bold.css" rel="stylesheet">
+      <link rel="icon" type="image/ico" href="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/128/search-icon.png"/>
+      <script src="https://kit.fontawesome.com/ee0bea2809.js"></script>
+
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+<div>
+  <nav class="navbar navbar-light bg-warning fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style= "border:none;">
+      <img src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/128/search-icon.png" style="height: 50px; background-color: black; border-radius: 50%;">
+      <i class="fas fa-bars"></i>
+      <a class="navbar-brand" href="#"><strong>&nbsp;MENU</strong></a>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#search">Search<span><button type="button" style="background: transparent; border: none;">
+            <i class="fas fa-search fa-xs float-left"></i>
+          </button></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ith">Programs in Ithaca</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#us">Programs in the United States</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#abroad">Programs Abroad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/landing-page/index.html" target="_blank">Home<span><button type="button" style="background: transparent; border: none;">
+            <i class="fas fa-home fa-xs float-left"></i>
+          </button></span></a>
+      </ul>
     </div>
-    <div id="mid">
-      <h2> Mid-West</h2>
-			<div id="small"><a href="https://www.google.com/search?q=jobs+at+nonprofits+iowa&ibp=htl;jobs#fpstate=tldetail&htidocid=Wsr4-D1p437j0v2zAAAAAA%3D%3D&htivrt=jobs">Occupational Therapist at CompHealth</a>
+  </nav>  <div class="block block-fill-height app-block-bg"
+       style="background-image: url(bg.jpg)">
+       <div class="block-sm-middle block-xs-top">
+
+         <div class="container" id="search">
+           <div class="row">
+             <div class="col-md-5 offset-sm-7">
+               <h1 class="block-title mb-4">
+                 <span class="text-ribbon bg-warning text-dark">
+                   <span>VOLUNTEER PROGRAMS.</span>
+                 </span>
+               </h1>
+               <p class="lead mt-1">
+                 <span class="text-ribbon bg-warning text-dark">
+                   <span>
+                     Make a difference in the world. Volunteer in a program today.
+                   </span>
+                   </span>
+                   <script async src="https://cse.google.com/cse.js?cx=002578799579816420439:yc1ymgxgols"></script>
+                   <div class="gcse-searchbox-only"></div>
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
-      <div id="small"><a href="https://www.google.com/search?q=jobs+at+nonprofits+iowa&ibp=htl;jobs#fpstate=tldetail&htidocid=imzYYoKV9S8E9zRRAAAAAA%3D%3D&htivrt=jobs">Human Resources Internship at VolunteerMatch</a>
       </div>
+
+
+  <div class="block block-fill-height app-block-bg" id="ith"
+       style="background-image: url(bg1.jpg);">
+       <div class="container">
+         <p class="lead mt-1">
+           <span class="text-ribbon bg-warning text-dark">
+             <span>
+               Some volunteer programs in
+             </span>
+             </span>
+           </p>
+       <h1 class="block-title">
+         <span class="bg-warning text-dark">
+           <span>Ithaca.</span>
+         </span>
+       </h1>
+       <table class="table table-borderless table-dark">
+         <tbody>
+           <tr>
+             <br>&nbsp;&nbsp;&nbsp;<a href="https://cityofithaca.org/264/One-to-One-Big-Brothers-Big-Sisters" target="_blank"><img src="https://cityofithaca.org/ImageRepository/Document?documentID=405" width="380" height="200" title="Big Brothers Big Sisters"></a>
+             &nbsp;&nbsp;&nbsp;<a href="https://cityofithaca.org/251/College-Discovery-Program" target="_blank"><img src="https://cityofithaca.org/ImageRepository/Document?documentID=382" width="380" height="200" title="College Discovery Program"></a>
+             &nbsp;&nbsp;&nbsp;<a href="http://www.friendsiyb.org/" target="_blank"><img src="https://images.squarespace-cdn.com/content/v1/52017aaae4b090e2d56840c6/1394499057959-YHVJ0UTDY2MA19JU3XP1/ke17ZwdGBToddI8pDm48kPYhLPOrBBoadokq8yaJsIp7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mlM0or4nqX7jrn5yWu0hA31sNXyE3R8kohLsLxyTIDZ5NbXI8Dn2rsOQUz8i8p5uA/marathon+creek+.JPG?format=2500w" width="300" height="200" title="Friends of the Ithaca Youth Bureau"></a>
+             <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-info" onclick="window.location.href = 'https://cityofithaca.org/264/One-to-One-Big-Brothers-Big-Sisters';">Big Brother Big Sisters</button>
+             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-info" onclick="window.location.href = 'https://cityofithaca.org/251/College-Discovery-Program';">College Discovery Program</button>
+             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-info" onclick="window.location.href = 'http://www.friendsiyb.org/';">Friends of the Ithaca Youth Bureau</button>
+           </tr>
+           <tr>
+             <br><br><br>&nbsp;&nbsp;&nbsp;<a href="https://cityofithaca.org/284/Paul-Schreurs-Memorial-Program" target="_blank"><img src="https://cityofithaca.org/ImageRepository/Document?documentID=412" width="380" height="200" title="Paul Schreurs Memorial Program"></a>
+             &nbsp;&nbsp;&nbsp;<a href="https://cityofithaca.org/229/Recreation-Department" target="_blank"><img src="https://cityofithaca.org/ImageRepository/Document?documentID=355" width="380" height="200" title="Recreation and Sport Leagues"></a>
+             &nbsp;&nbsp;&nbsp;<a href="https://cityofithaca.org/244/Recreation-Support-Services" target="_blank"><img src="https://cityofithaca.org/ImageRepository/Document?documentID=9833" width="300" height="200" title="Recreation Support Services"></a>
+             <br><br>&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-info" onclick="window.location.href = 'https://cityofithaca.org/284/Paul-Schreurs-Memorial-Program';">Paul Schreurs Memorial Program</button>
+             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-info" onclick="window.location.href = 'https://cityofithaca.org/229/Recreation-Department';">Recreation and Sport Leagues</button>
+             &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button type="button" class="btn btn-info" onclick="window.location.href = 'https://cityofithaca.org/244/Recreation-Support-Services';">Recreation Support Services</button>
+           </tr>
+         </tbody>
+       </table>
+
+     </div>
     </div>
-    <div id="west">
-      <h2> West Coast</h2>
-			<div id="small"><a href="https://www.google.com/search?q=jobs+at+nonprofits+california&ibp=htl;jobs#fpstate=tldetail&htidocid=bKd_eIgqgL9SP11fAAAAAA%3D%3D&htivrt=jobs">Sales Representative at Endeavour Global</a>
+
+
+    <div class="block block-fill-height app-block-bg" id="us"
+         style="background-image: url(bg2.jpg);">
+         <div class="container">
+           <p class="lead mt-1">
+             <span class="text-ribbon bg-info text-dark">
+               <span>
+                 Volunteer programs across
+               </span>
+               </span>
+             </p>
+           <h1 class="block-title">
+           <span class="bg-info text-dark">
+             <span>The United States of America.</span>
+           </span>
+         </h1>
+       </div>
       </div>
-    </div>
-		<div id="me">About The Designer</div>
-		<h3> Hi!<br>My name is <span style="color: gold">Oishani Ganguly</span>.<br>I'm a freshmen at Cornell University majoring in Information Science.<br>This website was my FemmeHacks 2019 project on user interface design <br>and my very first attempt at web design!<br>I hope you all enjoyed the interface!
-		</h3>
-			<br>
-		<div id="me">Contact</div>
-		<center><a href="https://www.facebook.com/oishani.ganguly" title="Facebook" target="blank"><img class="icons" id="facebook" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"></a></center>
-		<center><a href="https://www.linkedin.com/in/oishani-ganguly-220066143" title="LinkedIn" target="blank"><img class="icons" id="linkedin" src="data:image/png;base64,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"></a></center>
-    <center><a href="mailto:aphumbhr@oberlin.edu" title="Email"><img class="icons" id="email" src="https://cdn4.iconfinder.com/data/icons/happily-colored-snlogo/512/gmail-email-mail-logo-circle-material.png"></center>
-    </body>
+
+      <div class="block block-fill-height app-block-bg" id="abroad"
+           style="background-image: url(bg3.jpg);">
+           <div class="container">
+             <p class="lead mt-1">
+               <span class="text-ribbon" style="background: black; color: white">
+                 <span>
+                   Opportunities to volunteer
+                 </span>
+                 </span>
+               </p>
+           <h1 class="block-title">
+             <span style="background: black; color: white">
+               <span>Abroad</span>
+             </span>
+           </h1>
+         </div>
+        </div>
+
+
+
+          <div class="block block-inverse accent-primary" id="footer">
+            <div class="container">
+              <div class="row text-serif">
+                <div class="col-md-2 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html">Internships/Jobs</a></h4></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#engineeringmang" class="text-muted">Engineering & Management</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#design" class="text-muted">Design</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#webdev" class="text-muted">Web Development</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#ana" class="text-muted">Analysis</a></em></li>
+                  </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html" target="_blank">Research Opportunities</a></h4></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html#cs" target="_blank" class="text-muted">Computer Science</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html#is" target="_blank" class="text-muted">Information Science</a></em></li>
+                  </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html">Volunteer Programs</a></h4></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#ith" class="text-muted">Programs in Ithaca</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#us" class="text-muted">Programs in The United States</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#abroad" class="text-muted">Programs Abroad</a></em></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4>About the Developer</h4></li>
+                    <li class="text-muted">
+                      <em class="text-primary">OpporWeb</em> is developed by <em class="text-primary">Oishani Ganguly</em>. She's a student at Cornell University graduating in 2022 with a Bachelor's in Information Science. She is currently concentrating in Data Science and Interactive Technologies. She has a keen interest in Web Design with working knowledge in both. This website is a pet project and aims to alleviate the troubles college students encounter while looking for summer programs by having to scour the internet to find the a suitable project. With a wide range of listings on the website, OpporWeb hopes to overcome a part of this problem. Oishani hopes to expand the scope of the website beyond the CIS department and Cornell in the near future.
+                      <br>Background images taken from <em class="text-primary"><a href="https://unsplash.com/">unsplash.com</a></em>.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/tether.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script>
+      (function() {
+        var cx = '002578799579816420439:yc1ymgxgols';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      window.onload = function(){
+      document.getElementById('gsc-i-id1').placeholder = 'Search for a program';
+    };
+    $(function() {
+      $(document).click(function (event) {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+    </script>
+  </body>
 </html>

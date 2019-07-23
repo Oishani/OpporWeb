@@ -1,110 +1,363 @@
-<!-- The boring stuff -->
+
 <!DOCTYPE html>
-<html>
-	<head>
-    <link rel="icon" type="image/ico" href="https://pngimage.net/wp-content/uploads/2018/06/o-logo-design-png.png" />
-		<link href='https://fonts.googleapis.com/css?family=Amatic SC' rel='stylesheet'>
-		<style>
-		body {
-    font-family: 'Amatic SC';
-		font-size: 22px;
-		font-weight: 900;
-		background-image: url(https://as2.ftcdn.net/jpg/01/87/35/23/500_F_187352385_iMVAZL89ERpjfqdJLsP1M44OPBBrnGaL.jpg);
-  	background-size: contain;
-    position: relative;
-		}
-</style>
-</head>
-	<meta charset="UTF-8">
-	<title>OpporWeb:Int&Job</title>
-	<meta name="description" content="DESCRIBE YOUR WEBSITE">
-	<meta name="keywords" content="KEY, WORDS, HERE">
-	</head>
-	<body>
-    <div class="topnav">
-			<a href="file:///Users/titli/Desktop/my_website/index.html">Home</a>
-			<a href="file:///Users/titli/Desktop/my_website/index1.html">Internships and Jobs</a>
-			<a href="file:///Users/titli/Desktop/my_website/index2.html">Research Opportunities</a>
-			<a href="file:///Users/titli/Desktop/my_website/index3.html">Volunteer Projects</a>
-		  <a href="#me">About The Designer</a>
-		  <a href="#me">Contact</a>
-		</div>
-		<h1> INTERNSHIPS AND JOBS</h1>
-    <p> One space for all your Internships and Jobs.</p>
-    <link href="style1.css" rel="stylesheet">
-    <ul class=format><b>  What year are you in?</b><br>
-			<a href="#fresh"><span class="format">Freshman</a><br>
-				<img src="http://pngimg.com/uploads/number1/number1_PNG14874.png"/>
-		    <br>
-      <a href="#soph"><span class="format">Sophomore</a><br>
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/2_green.svg/2000px-2_green.svg.png"/>
-				<br>
-      <a href="#jun"><span class="space">Junior</a>
-				<img src="https://www.vintage-hostel.com/wp-content/uploads/2017/01/M_3.png"/>
-				<br>
-      <a href="#sen"><span class="space">Senior</a>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/4_green.svg/2000px-4_green.svg.png"/>
-        <br>
-        <a href="#mas"><span class="space">Master's Student</a>
-          <img src="http://cdn.onlinewebfonts.com/svg/img_534888.png"/>
-        <br>
-      <a href="#phd"><span class="space">PhD</a>
-        <img src="https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/hires/2017/phd.png"/>
-        <br>
-    </ul>
-    <div id="fresh">
-      <h2> Freshman</h2>
-      <div id="small"><a href="https://careers.google.com/jobs/results/5688825462194176-engineering-practicum-intern-summer-2019/">Google Summer Engineering Practicum</a>
-      </div>
-      <div id="small"><a href="https://www.facebook.com/careers/program/FBUEngineering/">Facebook University</a>
-      </div>
-      <div id="small"><a href="https://careers.microsoft.com/us/en/job/475698/Internship-Opportunities-for-Students-Explore-Microsoft-Internship-Program">Microsoft Explore</a>
-      </div>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+
+        OpporWeb
+
+    </title>
+
+
+      <link href="http://fonts.googleapis.com/css?family=Lora:400,400italic|Roboto:100,300,400,700" rel="stylesheet">
+      <link href="../assets/css/toolkit-bold.css" rel="stylesheet">
+      <link href="../assets/css/application-bold.css" rel="stylesheet">
+      <link rel="icon" type="image/ico" href="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/128/search-icon.png"/>
+      <script src="https://kit.fontawesome.com/ee0bea2809.js"></script>
+
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+
+<div>
+  <nav class="navbar navbar-light bg-info fixed-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" style= "border:none;">
+      <img src="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-1/128/search-icon.png" style="height: 50px; background-color: black; border-radius: 50%;">
+      <i class="fas fa-bars"></i>
+      <a class="navbar-brand" href="#"><strong>&nbsp;MENU</strong></a>
+    </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#search">Search<span><button type="button" style="background: transparent; border: none;">
+            <i class="fas fa-search fa-xs float-left"></i>
+          </button></span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#engineeringmang">Engineering & Management</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#design">Design</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#webdev">Web Development</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ana">Analysis</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/landing-page/index.html" target="_blank">Home<span><button type="button" style="background: transparent; border: none;">
+            <i class="fas fa-home fa-xs float-left"></i>
+          </button></span></a>
+      </ul>
     </div>
-    <div id="soph">
-      <h2> Sophomore</h2>
-      <div id="small"><a href="https://twitteracademy19.splashthat.com/">Twitter Academy</a>
+  </nav>  <div class="block block-fill-height app-block-bg"
+       style="background-image: url(bg.jpg)">
+       <div class="block-sm-middle block-xs-top">
+
+         <div class="container" id="search">
+           <div class="row">
+             <div class="col-md-5 offset-sm-7">
+               <h1 class="block-title mb-4">
+                 <span class="text-ribbon bg-info text-dark">
+                   <span>INTERNSHIPS & JOBS.</span>
+                 </span>
+               </h1>
+               <p class="lead mt-1">
+                 <span class="text-ribbon bg-info text-dark">
+                   <span>
+                     Find an internship you'll love or get hired at your dream company.
+                   </span>
+                   </span>
+                   <script async src="https://cse.google.com/cse.js?cx=002578799579816420439:jkix3q5_688"></script>
+                   <div class="gcse-searchbox-only"></div>
+              </p>
+             </div>
+           </div>
+         </div>
+       </div>
       </div>
-      <div id="small"><a href="https://www.goldmansachs.com/careers/students/programs/americas/summer-analyst.html">Goldman Sachs Summer Analyst Internship</a>
       </div>
+
+
+  <div class="block block-fill-height app-block-bg" id="engineeringmang"
+       style="background-image: url(bg1.jpg);">
+       <div class="container">
+         <p class="lead mt-1">
+           <span class="text-ribbon bg-primary text-dark">
+             <span>
+               Top companies recruiting in
+             </span>
+             </span>
+           </p>
+       <h1 class="block-title">
+         <span class="bg-primary text-dark">
+           <span>Engineering & Management.</span>
+         </span>
+       </h1>
+<table class="table table-borderless table-dark">
+  <tbody>
+    <tr>
+      <a href="" target="_blank"><img src="http://pngimg.com/uploads/google/google_PNG19644.png" width="160" height="100" title="Google"></a>
+      &emsp;&emsp;&emsp;;<a href="" target="_blank"><img src="http://pngimg.com/uploads/facebook_logos/facebook_logos_PNG19764.png" width="160" height="140" title="Facebook"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/apple_logo/apple_logo_PNG19690.png" width="110" height="100" title="Apple"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/amazon/amazon_PNG28.png" width="120" height="60" title="Amazon"></a>
+      &emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/tesla_logo/tesla_logo_PNG22.png" width="180" height="160" title="Tesla"></a>
+      &emsp;<a href="" target="_blank"><img src="https://pmcvariety.files.wordpress.com/2018/03/disney-logo.jpg?w=1000" width="200" height="140" title="Disney"></a>
+    </tr>
+    <tr>
+      <br><a href="" target="_blank"><img src="http://pngimg.com/uploads/microsoft/microsoft_PNG17.png" width="200" height="60" title="Microsoft"></a>
+      &emsp;&emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/ibm/ibm_PNG19662.png" width="160" height="100" title="IBM"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://pngimg.com/uploads/snapchat/snapchat_PNG61.png" width="120" height="120" title="Snap"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://cdn.technadu.com/wp-content/uploads/2019/06/Nvidia-Logo-696x392.png" width="150" height="100" title="Nvidia"></a>
+    </tr>
+    <tr>
+      &emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://cdn.freebiesupply.com/images/large/2x/airbnb-logo.png" width="200" height="150" title="Airbnb"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1224px-NASA_logo.svg.png" width="160" height="150" title="NASA"></a>
+      &emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://www.logosvectorfree.com/wp-content/uploads/2018/01/LinkedIn-Logo-Design-Vector.png" width="170" height="120" title="LinkedIn"></a>
+    </tr>
+    <tr>
+      &emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://clipart-library.com/data_images/53920.png" width="170" height="120" title="Twitter"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.stickpng.com/assets/images/584817d6cef1014c0b5e4999.png" width="120" height="40" title="Oracle"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://skinapeel.com/wp-content/uploads/2018/11/Yelp-Logo.png" width="150" height="150" title="Yelp"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/folder_920_201707260845-1.png" width="180" height="120" title="Spotify"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://www.sclance.com/pngs/spacex-logo-png/spacex_logo_png_1283240.png" width="170" height="100" title="SpaceX"></a>
+    </tr>
+    <tr>
+      &emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/paypal/paypal_PNG22.png" width="150" height="100" title="Paypal"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://mondrian.mashable.com/uploads%252Fstory%252Fthumbnail%252F89817%252F93e41468-260d-45de-9b2e-65132154f8bd.png%252F950x534.png?signature=GCaiO6VP2G8twfim10NMUwLrW64=&source=https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com" width="170" height="120" title="Slack"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.wslogos.com/wp-content/uploads/2019/02/great-cisco-logo-png-88-images-in-collection-page-1-this-year.jpg" width="200" height="100" title="Cisco"></a>
+      <br><br>&emsp;<a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Samsung_Logo.svg/1280px-Samsung_Logo.svg.png" width="170" height="100" title="Samsung"></a>
+      &emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pluspng.com/img-png/dell-logo-png-dell-logo-png-2778.jpg" width="150" height="120" title="Dell"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://cdn.freebiesupply.com/logos/large/2x/uber-15-logo-png-transparent.png" width="120" height="120" title="Uber"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.freepnglogos.com/uploads/visa-logo-png-5.png" width="120" height="40" title="Visa"></a>
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/EBay_logo.png/800px-EBay_logo.png" width="170" height="100" title="eBay"></a>
+      <br><br>&emsp;<a href="" target="_blank"><img src="http://pluspng.com/img-png/logo-hp-inc-png-hpe-application-performance-management-apm-1280.png" width="200" height="100" title="HP"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/intel/intel_PNG20.png" width="200" height="100" title="Intel"></a>
+      &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Dropbox_logo_%282013%29.svg/1280px-Dropbox_logo_%282013%29.svg.png" width="250" height="100" title="Dropbox"></a>
+    </tr>
+  </tbody>
+</table>
+     </div>
     </div>
-    <div id="jun">
-      <h2> Junior</h2>
-      <div id="small"><a href="https://www.yelp.com/careers/job-openings/3f4cb3c8-4152-48b6-a76a-8226c2907400?description=Software-Engineer-Intern-Summer-2019_College-Engineering-Product_San-Francisco-CA">Yelp Software Engineer</a>
+
+
+    <div class="block block-fill-height app-block-bg" id="design"
+         style="background-image: url(bg2.jpg);">
+         <div class="container">
+           <p class="lead mt-1">
+             <span class="text-ribbon bg-warning text-dark">
+               <span>
+                 Most sought after companies hiring in
+               </span>
+               </span>
+             </p>
+           <h1 class="block-title">
+           <span class="bg-warning text-dark">
+             <span>Design.</span>
+           </span>
+         </h1>
+         <table class="table table-borderless table-dark">
+           <tbody>
+             <tr>
+               <a href="" target="_blank"><img src="http://www.scalsys.com/png/pinterest-logo-png/pinterest-logo-png_15439.png" width="180" height="120" title="Pinterest"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.sccpre.cat/mypng/detail/343-3431062_file-fitbit-logo-svg-fitbit-logo-png.png" width="180" height="100" title="Fitbit"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://skinapeel.com/wp-content/uploads/2018/11/Yelp-Logo.png" width="150" height="150" title="Yelp"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://assetshuluimcom-a.akamaihd.net/h3o/facebook_share_thumb_default_hulu.jpg" width="200" height="140" title="Hulu"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://downloadicons.net/sites/default/files/adobe-logo-icon-67006.png" width="160" height="150" title="Adobe"></a>
+             </tr>
+            <tr>
+               <br><br><a href="" target="_blank"><img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c529.png" width="180" height="100" title="Netflix"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/folder_920_201707260845-1.png" width="180" height="120" title="Spotify"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://static1.squarespace.com/static/5134cbefe4b0c6fb04df8065/t/5bd1e1ccc830250c199dddd8/1540481488374/squarespace-logo-tertiary-black.jpg?format=500w" width="180" height="120" title="Squarespace"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://ksr-ugc.imgix.net/photos/56/vimeo_white_on_blue_full_logo.original.png?ixlib=rb-2.0.0&w=220&h=220&fit=crop&v=&auto=format&frame=1&q=92&s=dc5277ead881f116bdc09432d9476a3b" width="180" height="160" title="Vimeo"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://i1.wp.com/wptavern.com/wp-content/uploads/2019/03/Screen-Shot-2019-03-25-at-6.47.59-PM.png?fit=1200%2C659&ssl=1" width="180" height="160" title="Codecademy"></a>
+             </tr>
+             <tr>
+               <br><br><a href="" target="_blank"><img src="http://pngimg.com/uploads/google/google_PNG19644.png" width="160" height="100" title="Google"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/microsoft/microsoft_PNG17.png" width="200" height="60" title="Microsoft"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pngimg.com/uploads/amazon/amazon_PNG28.png" width="120" height="60" title="Amazon"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://regmedia.co.uk/2017/09/12/atlassian_logo.jpg?x=442&y=293&crop=1" width="190" height="120" title="Atlassian"></a>
+               &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://pmcvariety.files.wordpress.com/2018/03/disney-logo.jpg?w=1000" width="200" height="100" title="Disney"></a>
+             </tr>
+           </tbody>
+         </table>
+       </div>
       </div>
-      <div id="small"><a href="https://morganstanley.tal.net/vx/lang-en-GB/mobile-0/brand-2/xf-cc7f247bd166/candidate/so/pm/1/pl/1/opp/6033-2019-Technology-Summer-Internship-Budapest/en-GB">Morgan Stanley Summer Analyst Internship</a>
-      </div>
-      <div id="small"><a href="https://jpmchase.taleo.net/careersection/10140/jobdetail.ftl?job=190002292">JP Morgan Chase Software Engineering Internship</a>
-      </div>
-      <div id="small"><a href="https://www.google.com/about/careers/applications/u/0/packets/282c8ce3-e7ae-4471-b34b-57c3cbeef398/form">Google Software/Site Reliability Internship</a>
-      </div>
-    </div>
-    <div id="sen">
-      <h2> Senior</h2>
-      <div id="small"><a href="https://www.google.com/search?q=google+data+analyst&ibp=htl;jobs#fpstate=tldetail&htidocid=-hjYgPLeLxAsJYyQAAAAAA%3D%3D&htivrt=jobs">Google Data Analyst Full Time</a>
-      </div>
-      <div id="small"><a href="https://www.google.com/search?q=hardware+engineering+jobs&ibp=htl;jobs#fpstate=tldetail&htidocid=-1y3lu3Lw7VZG0jaAAAAAA%3D%3D&htivrt=jobs">IBM Hardware Engineer Full Time</a>
-      </div>
-    </div>
-    <div id="mas">
-      <h2> Master's Student</h2>
-      <div id="small"><a href="https://www.google.com/search?rlz=1C5CHFA_enIN804IN804&ei=nypfXIKBGPDF_QaVo4HABw&q=masters+internship&oq=masters+intern&gs_l=psy-ab.1.0.0i20i263l2j0l8.2109.5726..7244...0.0..0.107.1261.13j1....2..0....1..gws-wiz.......35i39j0i67j0i131j0i131i67j0i10i67j0i10.NHwlIau-I_A&ibp=htl;jobs&sa=X&ved=2ahUKEwiQp8Kis6_gAhVux1kKHYKHCDcQp4wCMAJ6BAgFEB4#htidocid=CHOpuP2iRWBZxC_UAAAAAA%3D%3D">IBM Digital Strategies Internship</a>
-      </div>
-      <div id="small"><a href="https://www.google.com/search?rlz=1C5CHFA_enIN804IN804&ei=nypfXIKBGPDF_QaVo4HABw&q=masters+internship&oq=masters+intern&gs_l=psy-ab.1.0.0i20i263l2j0l8.2109.5726..7244...0.0..0.107.1261.13j1....2..0....1..gws-wiz.......35i39j0i67j0i131j0i131i67j0i10i67j0i10.NHwlIau-I_A&ibp=htl;jobs&sa=X&ved=2ahUKEwiQp8Kis6_gAhVux1kKHYKHCDcQiYsCKAF6BAgFECM#fpstate=tldetail&htidocid=bQBPcaS6kr3vrv5vAAAAAA%3D%3D&htivrt=jobs">Dell Solutions Architect Internship</a>
-      </div>
-    </div>
-    <div id="phd">
-      <h2> PhD</h2>
-      <div id="small"><a href="https://careers.google.com/jobs/results/5606214563856384-software-engineering-intern-phd-2019/?company=Google&company=YouTube&employment_type=INTERN&jlo=en_US&q=Software%20Engineer">Google Software Engineering Internship</a>
-      </div>
-    </div>
-		<div id="me">About The Designer</div>
-		<h3> Hi!<br>My name is <span style="color: gold">Oishani Ganguly</span>.<br>I'm a freshmen at Cornell University majoring in Information Science.<br>This website was my FemmeHacks 2019 project on user interface design <br>and my very first attempt at web design!<br>I hope you all enjoyed the interface!
-		</h3>
-			<br>
-		<div id="me">Contact</div>
-		<center><a href="https://www.facebook.com/oishani.ganguly" title="Facebook" target="blank"><img class="icons" id="facebook" src="https://cdn4.iconfinder.com/data/icons/social-media-icons-the-circle-set/48/facebook_circle-512.png"></a></center>
-		<center><a href="https://www.linkedin.com/in/oishani-ganguly-220066143" title="LinkedIn" target="blank"><img class="icons" id="linkedin" src="data:image/png;base64,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"></a></center>
-    <center><a href="mailto:oishani.ganguly@gmail.com" title="Email"><img class="icons" id="email" src="https://cdn4.iconfinder.com/data/icons/happily-colored-snlogo/512/gmail-email-mail-logo-circle-material.png"></center>
-    </body>
+
+      <div class="block block-fill-height app-block-bg" id="webdev"
+           style="background-image: url(bg3.jpg);">
+           <div class="container">
+             <p class="lead mt-1">
+               <span class="text-ribbon bg-success text-dark">
+                 <span>
+                   Companies specializing in
+                 </span>
+                 </span>
+               </p>
+           <h1 class="block-title">
+             <span class="bg-success text-dark">
+               <span>Web Development.</span>
+             </span>
+           </h1>
+           <table class="table table-borderless table-dark">
+             <tbody>
+               <tr>
+                 <br><a href="" target="_blank"><img src="https://www.webfx.com/blog/wp-content/uploads/2018/08/webfx-logo.png" width="200" height="100" title="WebFX"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://ddgsb4yncp1w5.cloudfront.net/wp-content/uploads/2018/10/Lounge_Lizard.png" width="170" height="120" title="Lounge Lizard"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.intechnic.com/hs-fs/hubfs/Imported_Blog_Media/intechnic-logo-3.png?width=600&height=275&name=intechnic-logo-3.png" width="200" height="100" title="Intechnic"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.mightybytes.com/wp-content/uploads/2017/06/blue_mightbytes_square.png" width="100" height="100" title="Mightybytes"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://d35fbrktrbukd.cloudfront.net/wp-content/uploads/2016/09/28042815/Untitled-2.png" width="170" height="130" title="Blue Fountain Media"></a>
+               </tr>
+               <tr>
+                 <br><a href="" target="_blank"><img src="https://www.taoti.com/wp-content/uploads/2018/09/taoti-admin-2.png" width="180" height="150" title="Taoti Creative"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_d58988c34a696f1883d5bc5646c893c0/bizzuka-inc.png" width="200" height="150" title="Bizzuka, Inc"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://s3-media1.fl.yelpcdn.com/bphoto/RSvNcs2FrdsV0V7DSI0cpw/o.jpg" width="200" height="100" title="Unleaded Group"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.maxburst.com/wp-content/uploads/2016/10/maxburst_logo_500x500.jpg" width="150" height="100" title="MAXBURST"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://a.mktgcdn.com/p/UJoT2r4pI8tLHdy_-MOFRfcYGVLbM6IQPu6w-o0sSzg/400x400.jpg" width="180" height="130" title="ePageCity"></a>
+               </tr>
+               <tr>
+                 <br><br><a href="" target="_blank"><img src="https://martechseries.com/wp-content/uploads/2017/08/R2Integrated-840x440.png" width="220" height="100" title="R2integrated"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://pbs.twimg.com/profile_images/754087530962624512/Ag153f6e.jpg" width="150" height="150" title="Do.com/"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://pbs.twimg.com/profile_images/1049361032060329990/MqVy8MdI_400x400.jpg" width="150" height="130" title="Constructive"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://media.licdn.com/dms/image/C560BAQGOqI2Sn2noTQ/company-logo_200_200/0?e=2159024400&v=beta&t=PU-fuSmekl2VEoyMK7UepE6siwVsz3wMI264yckMoN0" width="150" height="160" title="Bright Bright Great"></a>
+                 &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://hubspot-partners-prod.s3.amazonaws.com/thumbnails/308777/500.jpeg" width="150" height="150" title="Designzillas"></a>
+               </tr>
+             </tbody>
+           </table>
+         </div>
+        </div>
+
+        <div class="block block-fill-height app-block-bg" id="ana"
+             style="background-image: url(bg4.jpg);">
+             <div class="container">
+               <p class="lead mt-1">
+                 <span class="text-ribbon bg-danger text-dark">
+                   <span>
+                     Best companies to work for in
+                   </span>
+                   </span>
+                 </p>
+               <h1 class="block-title">
+               <span class="bg-danger text-dark">
+                 <span>Analysis.</span>
+               </span>
+             </h1>
+             <table class="table table-borderless table-dark">
+               <tbody>
+                 <tr>
+                   <br><a href="" target="_blank"><img src="https://eddesignlab.org/wp-content/uploads/2018/03/goldman-sachs-logo-png-transparent.png" width="170" height="140" title="Goldman Sachs"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://d2wsh2n0xua73e.cloudfront.net/wp-content/uploads/2017/03/Morgan-Stanley.png" width="170" height="120" title="Morgan Stanley"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://radioimg.s3.amazonaws.com/connectingvets/styles/nts_image_cover_tall_775x425/s3/JP%20Morgan%20Logo.PNG?fghkHNLSHMk.YYZePWrwQL7Ozdk9lmf6&itok=TdeH1wf1&c=c5d098ad110c5be809133ac9dc9064ad" width="200" height="100" title="JP Morgan Chase"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://assets.simpleviewinc.com/simpleview/image/fetch/c_fit,h_407,q_75,w_610/https://res.cloudinary.com/simpleview/image/upload/crm/roanoke/edward-jones-logo-rocky-mount0_c123fd8d-5056-a36a-09205060f94b9615.png" width="170" height="100" title="Edward Jones"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.blackstone.com/images/default-source/logos/blackstone-logo.png" width="170" height="100" title="Blackstone"></a>
+                 </tr>
+                 <tr>
+                   <a href="" target="_blank"><img src="http://orignallogo.com/wp-content/uploads/2018/07/Capital-One-Logo-Symbol-Vector.png" width="220" height="100" title="Capital One"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://cdn.ragan.com/wp-content/uploads/2018/02/Use-for-HR.jpg" width="170" height="120" title="Deloitte"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://usaa.i.lithium.com/t5/image/serverpage/image-id/3526i58FD2DF835727AD8/image-size/large/is-moderation-mode/true?v=1.0&px=999" width="200" height="100" title="USAA"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/TIAA_logo_%282016%29.svg/1200px-TIAA_logo_%282016%29.svg.png" width="170" height="100" title="TIAA"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.musiccenter.org/globalassets/imagespac/plaza/bank_of_america_logo_stacked_a.png" width="120" height="100" title="Bank of America"></a>
+                 </tr>
+                 <tr>
+                   <a href="" target="_blank"><img src="https://pentagram-production.imgix.net/wp/592ca89f19a1d/ps-citibank-01.jpg?rect=0%2C177%2C960%2C600&w=880&fit=crop&fm=jpg&q=70&auto=format&h=548" width="220" height="100" title="Citi"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="http://pluspng.com/img-png/logo-hp-inc-png-hpe-application-performance-management-apm-1280.png" width="200" height="100" title="HP"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://www.wslogos.com/wp-content/uploads/2019/02/great-cisco-logo-png-88-images-in-collection-page-1-this-year.jpg" width="200" height="100" title="Cisco"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png" width="170" height="140" title="American Express"></a>
+                   &emsp;&emsp;&emsp;<a href="" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Wells_Fargo_Bank.svg/768px-Wells_Fargo_Bank.svg.png" width="120" height="100" title="Wells Fargo"></a>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+          </div>
+
+
+
+          <div class="block block-inverse accent-primary" id="footer">
+            <div class="container">
+              <div class="row text-serif">
+                <div class="col-md-2 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html">Internships/Jobs</a></h4></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#engineeringmang" class="text-muted">Engineering & Management</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#design" class="text-muted">Design</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#webdev" class="text-muted">Web Development</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/internships-page/index1.html#ana" class="text-muted">Analysis</a></em></li>
+                  </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html" target="_blank">Research Opportunities</a></h4></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html#cs" target="_blank" class="text-muted">Computer Science</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/research-page/index2.html#is" target="_blank" class="text-muted">Information Science</a></em></li>
+                  </ul>
+                </div>
+                <div class="col-md-2 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html" target="_blank">Volunteer Programs</a></h4></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#ith" target="_blank" class="text-muted">Programs in Ithaca</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#us" target="_blank" class="text-muted">Programs in The United States</a></em></li>
+                    <li><em><a href="file:///Users/titli/Desktop/bootstrapthemes/theme-marketing-extended-3/v4/docs/volunteer-page/index3.html#abroad" target="_blank" class="text-muted">Programs Abroad</a></em></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <ul class="list-unstyled list-spaced">
+                    <li><h4>About the Developer</h4></li>
+                    <li class="text-muted">
+                      <em class="text-primary">OpporWeb</em> is developed by <em class="text-primary">Oishani Ganguly</em>. She's a student at Cornell University graduating in 2022 with a Bachelor's in Information Science. She is currently concentrating in Data Science and Interactive Technologies. She has a keen interest in Web Design with working knowledge in both. This website is a pet project and aims to alleviate the troubles college students encounter while looking for summer programs by having to scour the internet to find the a suitable project. With a wide range of listings on the website, OpporWeb hopes to overcome a part of this problem. Oishani hopes to expand the scope of the website beyond the CIS department and Cornell in the near future.
+                      <br>Background images taken from <em class="text-primary"><a href="https://unsplash.com/">unsplash.com</a></em>.
+                      <br>Suggested list of companies for Engineering and Management jobs adapted from <em class="text-primary"><a href="https://www.businessinsider.com/top-companies-ivy-league-computer-science-graduates-most-want-to-work-2018-6">businessinsider.com</a></em>. <br>Suggested list of companies for Design jobs adapted from <em class="text-primary"><a href="https://www.glassdoor.com/blog/tech-companies-hiring-creatives/">glassdoor.com</a></em>. <br>Suggested list of companies for web Development jobs adapted from <em class="text-primary"><a href="https://techreviewer.co/top-web-development-companies-2019/">techreviewer.co</a></em>.
+                      <br>Suggested list of companies for Analysis jobs adapted from <em class="text-primary"><a href="https://unsplash.com/">unsplash.com</a></em>.
+                      <br>Job listings taken from respective company websites.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/tether.min.js"></script>
+    <script src="../assets/js/toolkit.js"></script>
+    <script src="../assets/js/application.js"></script>
+    <script>
+      (function() {
+        var cx = '002578799579816420439:jkix3q5_688';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+            '//cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+      window.onload = function(){
+      document.getElementById('gsc-i-id1').placeholder = 'Search for any job';
+    };
+    $(function() {
+      $(document).click(function (event) {
+        $('.navbar-collapse').collapse('hide');
+      });
+    });
+    </script>
+  </body>
 </html>
